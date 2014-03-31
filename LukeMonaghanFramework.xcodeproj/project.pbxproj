@@ -1,0 +1,734 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE87415517C7538500D9C191 /* libfreeimage-3.15.4.dylib-x86_64 in Frameworks */ = {isa = PBXBuildFile; fileRef = CE87415117C7538500D9C191 /* libfreeimage-3.15.4.dylib-x86_64 */; };
+		CE87415617C7538500D9C191 /* libGLEW.1.10.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CE87415217C7538500D9C191 /* libGLEW.1.10.0.dylib */; };
+		CE87415717C7538500D9C191 /* libglfw.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CE87415317C7538500D9C191 /* libglfw.dylib */; };
+		CE87415A17C7538B00D9C191 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE87415917C7538B00D9C191 /* OpenGL.framework */; };
+		CE87415E17C753A000D9C191 /* libfreeimage-3.15.4.dylib-x86_64 in CopyFiles */ = {isa = PBXBuildFile; fileRef = CE87415117C7538500D9C191 /* libfreeimage-3.15.4.dylib-x86_64 */; };
+		CE87415F17C753A000D9C191 /* libGLEW.1.10.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = CE87415217C7538500D9C191 /* libGLEW.1.10.0.dylib */; };
+		CE87416017C753A000D9C191 /* libglfw.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = CE87415317C7538500D9C191 /* libglfw.dylib */; };
+		CED5648B17C86139007C6F82 /* Font.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5642D17C86139007C6F82 /* Font.h */; };
+		CED5648C17C86139007C6F82 /* Model.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5642E17C86139007C6F82 /* Model.h */; };
+		CED5648D17C86139007C6F82 /* object.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5642F17C86139007C6F82 /* object.h */; };
+		CED5648E17C86139007C6F82 /* renderable.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5643017C86139007C6F82 /* renderable.h */; };
+		CED5648F17C86139007C6F82 /* square.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5643117C86139007C6F82 /* square.h */; };
+		CED5649017C86139007C6F82 /* Emitter.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5643217C86139007C6F82 /* Emitter.h */; };
+		CED5649117C86139007C6F82 /* Framework.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5643317C86139007C6F82 /* Framework.h */; };
+		CED5649217C86139007C6F82 /* FontManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5643517C86139007C6F82 /* FontManager.h */; };
+		CED5649317C86139007C6F82 /* ModelManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5643617C86139007C6F82 /* ModelManager.h */; };
+		CED5649417C86139007C6F82 /* ParticleManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5643717C86139007C6F82 /* ParticleManager.h */; };
+		CED5649517C86139007C6F82 /* ShaderManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5643817C86139007C6F82 /* ShaderManager.h */; };
+		CED5649617C86139007C6F82 /* SoundManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5643917C86139007C6F82 /* SoundManager.h */; };
+		CED5649717C86139007C6F82 /* SquareManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5643A17C86139007C6F82 /* SquareManager.h */; };
+		CED5649817C86139007C6F82 /* Shader.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5643B17C86139007C6F82 /* Shader.h */; };
+		CED5649917C86139007C6F82 /* Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5643C17C86139007C6F82 /* Utilities.h */; };
+		CED5649A17C86139007C6F82 /* XboxController.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5643D17C86139007C6F82 /* XboxController.h */; };
+		CED5649B17C86139007C6F82 /* FreeImage.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5643F17C86139007C6F82 /* FreeImage.h */; };
+		CED5649C17C86139007C6F82 /* FrameworkWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5644017C86139007C6F82 /* FrameworkWrapper.h */; };
+		CED5649D17C86139007C6F82 /* glew.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5644217C86139007C6F82 /* glew.h */; };
+		CED5649E17C86139007C6F82 /* glfw.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5644317C86139007C6F82 /* glfw.h */; };
+		CED5649F17C86139007C6F82 /* wglew.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5644417C86139007C6F82 /* wglew.h */; };
+		CED564A017C86139007C6F82 /* ik_ESoundEngineOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5644617C86139007C6F82 /* ik_ESoundEngineOptions.h */; };
+		CED564A117C86139007C6F82 /* ik_ESoundOutputDrivers.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5644717C86139007C6F82 /* ik_ESoundOutputDrivers.h */; };
+		CED564A217C86139007C6F82 /* ik_EStreamModes.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5644817C86139007C6F82 /* ik_EStreamModes.h */; };
+		CED564A317C86139007C6F82 /* ik_IAudioRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5644917C86139007C6F82 /* ik_IAudioRecorder.h */; };
+		CED564A417C86139007C6F82 /* ik_IAudioStream.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5644A17C86139007C6F82 /* ik_IAudioStream.h */; };
+		CED564A517C86139007C6F82 /* ik_IAudioStreamLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5644B17C86139007C6F82 /* ik_IAudioStreamLoader.h */; };
+		CED564A617C86139007C6F82 /* ik_IFileFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5644C17C86139007C6F82 /* ik_IFileFactory.h */; };
+		CED564A717C86139007C6F82 /* ik_IFileReader.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5644D17C86139007C6F82 /* ik_IFileReader.h */; };
+		CED564A817C86139007C6F82 /* ik_IRefCounted.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5644E17C86139007C6F82 /* ik_IRefCounted.h */; };
+		CED564A917C86139007C6F82 /* ik_irrKlangTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5644F17C86139007C6F82 /* ik_irrKlangTypes.h */; };
+		CED564AA17C86139007C6F82 /* ik_ISound.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5645017C86139007C6F82 /* ik_ISound.h */; };
+		CED564AB17C86139007C6F82 /* ik_ISoundDeviceList.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5645117C86139007C6F82 /* ik_ISoundDeviceList.h */; };
+		CED564AC17C86139007C6F82 /* ik_ISoundEffectControl.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5645217C86139007C6F82 /* ik_ISoundEffectControl.h */; };
+		CED564AD17C86139007C6F82 /* ik_ISoundEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5645317C86139007C6F82 /* ik_ISoundEngine.h */; };
+		CED564AE17C86139007C6F82 /* ik_ISoundMixedOutputReceiver.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5645417C86139007C6F82 /* ik_ISoundMixedOutputReceiver.h */; };
+		CED564AF17C86139007C6F82 /* ik_ISoundSource.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5645517C86139007C6F82 /* ik_ISoundSource.h */; };
+		CED564B017C86139007C6F82 /* ik_ISoundStopEventReceiver.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5645617C86139007C6F82 /* ik_ISoundStopEventReceiver.h */; };
+		CED564B117C86139007C6F82 /* ik_IVirtualRefCounted.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5645717C86139007C6F82 /* ik_IVirtualRefCounted.h */; };
+		CED564B217C86139007C6F82 /* ik_SAudioStreamFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5645817C86139007C6F82 /* ik_SAudioStreamFormat.h */; };
+		CED564B317C86139007C6F82 /* ik_vec3d.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5645917C86139007C6F82 /* ik_vec3d.h */; };
+		CED564B417C86139007C6F82 /* irrKlang.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5645A17C86139007C6F82 /* irrKlang.h */; };
+		CED564B517C86139007C6F82 /* LukeMonaghanFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5645B17C86139007C6F82 /* LukeMonaghanFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CED564B617C86139007C6F82 /* LukeMonaghanFrameworkPython.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5645C17C86139007C6F82 /* LukeMonaghanFrameworkPython.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CED564B717C86139007C6F82 /* Maths.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5645E17C86139007C6F82 /* Maths.h */; };
+		CED564B817C86139007C6F82 /* Matrix3.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5645F17C86139007C6F82 /* Matrix3.h */; };
+		CED564B917C86139007C6F82 /* Matrix4.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5646017C86139007C6F82 /* Matrix4.h */; };
+		CED564BA17C86139007C6F82 /* Vector2.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5646117C86139007C6F82 /* Vector2.h */; };
+		CED564BB17C86139007C6F82 /* Vector3.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5646217C86139007C6F82 /* Vector3.h */; };
+		CED564BC17C86139007C6F82 /* Vector4.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5646317C86139007C6F82 /* Vector4.h */; };
+		CED564BD17C86139007C6F82 /* tinystr.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5646517C86139007C6F82 /* tinystr.h */; };
+		CED564BE17C86139007C6F82 /* tinyxml.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5646617C86139007C6F82 /* tinyxml.h */; };
+		CED564BF17C86139007C6F82 /* Font.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CED5646A17C86139007C6F82 /* Font.cpp */; };
+		CED564C017C86139007C6F82 /* Model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CED5646B17C86139007C6F82 /* Model.cpp */; };
+		CED564C117C86139007C6F82 /* object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CED5646C17C86139007C6F82 /* object.cpp */; };
+		CED564C217C86139007C6F82 /* renderable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CED5646D17C86139007C6F82 /* renderable.cpp */; };
+		CED564C317C86139007C6F82 /* square.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CED5646E17C86139007C6F82 /* square.cpp */; };
+		CED564C417C86139007C6F82 /* Emitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CED5646F17C86139007C6F82 /* Emitter.cpp */; };
+		CED564C517C86139007C6F82 /* Framework.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CED5647017C86139007C6F82 /* Framework.cpp */; };
+		CED564C617C86139007C6F82 /* FontManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CED5647217C86139007C6F82 /* FontManager.cpp */; };
+		CED564C717C86139007C6F82 /* ModelManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CED5647317C86139007C6F82 /* ModelManager.cpp */; };
+		CED564C817C86139007C6F82 /* ParticleManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CED5647417C86139007C6F82 /* ParticleManager.cpp */; };
+		CED564C917C86139007C6F82 /* ShaderManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CED5647517C86139007C6F82 /* ShaderManager.cpp */; };
+		CED564CA17C86139007C6F82 /* SoundManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CED5647617C86139007C6F82 /* SoundManager.cpp */; };
+		CED564CB17C86139007C6F82 /* SquareManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CED5647717C86139007C6F82 /* SquareManager.cpp */; };
+		CED564CC17C86139007C6F82 /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CED5647817C86139007C6F82 /* Shader.cpp */; };
+		CED564CD17C86139007C6F82 /* Utilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CED5647917C86139007C6F82 /* Utilities.cpp */; };
+		CED564CE17C86139007C6F82 /* XboxController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CED5647A17C86139007C6F82 /* XboxController.cpp */; };
+		CED564CF17C86139007C6F82 /* FrameworkWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CED5647B17C86139007C6F82 /* FrameworkWrapper.cpp */; };
+		CED564D017C86139007C6F82 /* LukeMonaghanFramework.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CED5647C17C86139007C6F82 /* LukeMonaghanFramework.cpp */; };
+		CED564D117C86139007C6F82 /* LukeMonaghanFrameworkPython.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CED5647D17C86139007C6F82 /* LukeMonaghanFrameworkPython.cpp */; };
+		CED564D217C86139007C6F82 /* MAIN.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CED5647E17C86139007C6F82 /* MAIN.cpp */; };
+		CED564D317C86139007C6F82 /* Maths.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CED5648017C86139007C6F82 /* Maths.cpp */; };
+		CED564D417C86139007C6F82 /* Matrix3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CED5648117C86139007C6F82 /* Matrix3.cpp */; };
+		CED564D517C86139007C6F82 /* Matrix4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CED5648217C86139007C6F82 /* Matrix4.cpp */; };
+		CED564D617C86139007C6F82 /* Vector2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CED5648317C86139007C6F82 /* Vector2.cpp */; };
+		CED564D717C86139007C6F82 /* Vector3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CED5648417C86139007C6F82 /* Vector3.cpp */; };
+		CED564D817C86139007C6F82 /* Vector4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CED5648517C86139007C6F82 /* Vector4.cpp */; };
+		CED564D917C86139007C6F82 /* tinystr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CED5648717C86139007C6F82 /* tinystr.cpp */; };
+		CED564DA17C86139007C6F82 /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CED5648817C86139007C6F82 /* tinyxml.cpp */; };
+		CED564DB17C86139007C6F82 /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CED5648917C86139007C6F82 /* tinyxmlerror.cpp */; };
+		CED564DC17C86139007C6F82 /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CED5648A17C86139007C6F82 /* tinyxmlparser.cpp */; };
+		CEEC537A17C9D0D400C70049 /* libpython2.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CEEC537917C9D0D400C70049 /* libpython2.7.dylib */; };
+		CEEC537B17C9D0DB00C70049 /* libpython2.7.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = CEEC537917C9D0D400C70049 /* libpython2.7.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CE87415D17C7539B00D9C191 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				CEEC537B17C9D0DB00C70049 /* libpython2.7.dylib in CopyFiles */,
+				CE87415E17C753A000D9C191 /* libfreeimage-3.15.4.dylib-x86_64 in CopyFiles */,
+				CE87415F17C753A000D9C191 /* libGLEW.1.10.0.dylib in CopyFiles */,
+				CE87416017C753A000D9C191 /* libglfw.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CE87414917C7528800D9C191 /* libLukeMonaghanFramework.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libLukeMonaghanFramework.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE87415117C7538500D9C191 /* libfreeimage-3.15.4.dylib-x86_64 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libfreeimage-3.15.4.dylib-x86_64"; path = "LukeMonaghanFramework/Libs/libfreeimage-3.15.4.dylib-x86_64"; sourceTree = "<group>"; };
+		CE87415217C7538500D9C191 /* libGLEW.1.10.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.1.10.0.dylib; path = LukeMonaghanFramework/Libs/libGLEW.1.10.0.dylib; sourceTree = "<group>"; };
+		CE87415317C7538500D9C191 /* libglfw.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.dylib; path = LukeMonaghanFramework/Libs/libglfw.dylib; sourceTree = "<group>"; };
+		CE87415917C7538B00D9C191 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		CE87415B17C7539000D9C191 /* Python.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Python.framework; path = System/Library/Frameworks/Python.framework; sourceTree = SDKROOT; };
+		CED5642D17C86139007C6F82 /* Font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Font.h; sourceTree = "<group>"; };
+		CED5642E17C86139007C6F82 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		CED5642F17C86139007C6F82 /* object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = object.h; sourceTree = "<group>"; };
+		CED5643017C86139007C6F82 /* renderable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = renderable.h; sourceTree = "<group>"; };
+		CED5643117C86139007C6F82 /* square.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = square.h; sourceTree = "<group>"; };
+		CED5643217C86139007C6F82 /* Emitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Emitter.h; sourceTree = "<group>"; };
+		CED5643317C86139007C6F82 /* Framework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Framework.h; sourceTree = "<group>"; };
+		CED5643517C86139007C6F82 /* FontManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontManager.h; sourceTree = "<group>"; };
+		CED5643617C86139007C6F82 /* ModelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelManager.h; sourceTree = "<group>"; };
+		CED5643717C86139007C6F82 /* ParticleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticleManager.h; sourceTree = "<group>"; };
+		CED5643817C86139007C6F82 /* ShaderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderManager.h; sourceTree = "<group>"; };
+		CED5643917C86139007C6F82 /* SoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundManager.h; sourceTree = "<group>"; };
+		CED5643A17C86139007C6F82 /* SquareManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquareManager.h; sourceTree = "<group>"; };
+		CED5643B17C86139007C6F82 /* Shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shader.h; sourceTree = "<group>"; };
+		CED5643C17C86139007C6F82 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		CED5643D17C86139007C6F82 /* XboxController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XboxController.h; sourceTree = "<group>"; };
+		CED5643F17C86139007C6F82 /* FreeImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreeImage.h; sourceTree = "<group>"; };
+		CED5644017C86139007C6F82 /* FrameworkWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrameworkWrapper.h; sourceTree = "<group>"; };
+		CED5644217C86139007C6F82 /* glew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glew.h; sourceTree = "<group>"; };
+		CED5644317C86139007C6F82 /* glfw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glfw.h; sourceTree = "<group>"; };
+		CED5644417C86139007C6F82 /* wglew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wglew.h; sourceTree = "<group>"; };
+		CED5644617C86139007C6F82 /* ik_ESoundEngineOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ik_ESoundEngineOptions.h; sourceTree = "<group>"; };
+		CED5644717C86139007C6F82 /* ik_ESoundOutputDrivers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ik_ESoundOutputDrivers.h; sourceTree = "<group>"; };
+		CED5644817C86139007C6F82 /* ik_EStreamModes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ik_EStreamModes.h; sourceTree = "<group>"; };
+		CED5644917C86139007C6F82 /* ik_IAudioRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ik_IAudioRecorder.h; sourceTree = "<group>"; };
+		CED5644A17C86139007C6F82 /* ik_IAudioStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ik_IAudioStream.h; sourceTree = "<group>"; };
+		CED5644B17C86139007C6F82 /* ik_IAudioStreamLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ik_IAudioStreamLoader.h; sourceTree = "<group>"; };
+		CED5644C17C86139007C6F82 /* ik_IFileFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ik_IFileFactory.h; sourceTree = "<group>"; };
+		CED5644D17C86139007C6F82 /* ik_IFileReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ik_IFileReader.h; sourceTree = "<group>"; };
+		CED5644E17C86139007C6F82 /* ik_IRefCounted.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ik_IRefCounted.h; sourceTree = "<group>"; };
+		CED5644F17C86139007C6F82 /* ik_irrKlangTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ik_irrKlangTypes.h; sourceTree = "<group>"; };
+		CED5645017C86139007C6F82 /* ik_ISound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ik_ISound.h; sourceTree = "<group>"; };
+		CED5645117C86139007C6F82 /* ik_ISoundDeviceList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ik_ISoundDeviceList.h; sourceTree = "<group>"; };
+		CED5645217C86139007C6F82 /* ik_ISoundEffectControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ik_ISoundEffectControl.h; sourceTree = "<group>"; };
+		CED5645317C86139007C6F82 /* ik_ISoundEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ik_ISoundEngine.h; sourceTree = "<group>"; };
+		CED5645417C86139007C6F82 /* ik_ISoundMixedOutputReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ik_ISoundMixedOutputReceiver.h; sourceTree = "<group>"; };
+		CED5645517C86139007C6F82 /* ik_ISoundSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ik_ISoundSource.h; sourceTree = "<group>"; };
+		CED5645617C86139007C6F82 /* ik_ISoundStopEventReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ik_ISoundStopEventReceiver.h; sourceTree = "<group>"; };
+		CED5645717C86139007C6F82 /* ik_IVirtualRefCounted.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ik_IVirtualRefCounted.h; sourceTree = "<group>"; };
+		CED5645817C86139007C6F82 /* ik_SAudioStreamFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ik_SAudioStreamFormat.h; sourceTree = "<group>"; };
+		CED5645917C86139007C6F82 /* ik_vec3d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ik_vec3d.h; sourceTree = "<group>"; };
+		CED5645A17C86139007C6F82 /* irrKlang.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = irrKlang.h; sourceTree = "<group>"; };
+		CED5645B17C86139007C6F82 /* LukeMonaghanFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LukeMonaghanFramework.h; sourceTree = "<group>"; };
+		CED5645C17C86139007C6F82 /* LukeMonaghanFrameworkPython.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LukeMonaghanFrameworkPython.h; sourceTree = "<group>"; };
+		CED5645E17C86139007C6F82 /* Maths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Maths.h; sourceTree = "<group>"; };
+		CED5645F17C86139007C6F82 /* Matrix3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matrix3.h; sourceTree = "<group>"; };
+		CED5646017C86139007C6F82 /* Matrix4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matrix4.h; sourceTree = "<group>"; };
+		CED5646117C86139007C6F82 /* Vector2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector2.h; sourceTree = "<group>"; };
+		CED5646217C86139007C6F82 /* Vector3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector3.h; sourceTree = "<group>"; };
+		CED5646317C86139007C6F82 /* Vector4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector4.h; sourceTree = "<group>"; };
+		CED5646517C86139007C6F82 /* tinystr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tinystr.h; sourceTree = "<group>"; };
+		CED5646617C86139007C6F82 /* tinyxml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tinyxml.h; sourceTree = "<group>"; };
+		CED5646A17C86139007C6F82 /* Font.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Font.cpp; sourceTree = "<group>"; };
+		CED5646B17C86139007C6F82 /* Model.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Model.cpp; sourceTree = "<group>"; };
+		CED5646C17C86139007C6F82 /* object.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = object.cpp; sourceTree = "<group>"; };
+		CED5646D17C86139007C6F82 /* renderable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = renderable.cpp; sourceTree = "<group>"; };
+		CED5646E17C86139007C6F82 /* square.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = square.cpp; sourceTree = "<group>"; };
+		CED5646F17C86139007C6F82 /* Emitter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Emitter.cpp; sourceTree = "<group>"; };
+		CED5647017C86139007C6F82 /* Framework.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Framework.cpp; sourceTree = "<group>"; };
+		CED5647217C86139007C6F82 /* FontManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FontManager.cpp; sourceTree = "<group>"; };
+		CED5647317C86139007C6F82 /* ModelManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ModelManager.cpp; sourceTree = "<group>"; };
+		CED5647417C86139007C6F82 /* ParticleManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParticleManager.cpp; sourceTree = "<group>"; };
+		CED5647517C86139007C6F82 /* ShaderManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderManager.cpp; sourceTree = "<group>"; };
+		CED5647617C86139007C6F82 /* SoundManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SoundManager.cpp; sourceTree = "<group>"; };
+		CED5647717C86139007C6F82 /* SquareManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SquareManager.cpp; sourceTree = "<group>"; };
+		CED5647817C86139007C6F82 /* Shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Shader.cpp; sourceTree = "<group>"; };
+		CED5647917C86139007C6F82 /* Utilities.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Utilities.cpp; sourceTree = "<group>"; };
+		CED5647A17C86139007C6F82 /* XboxController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XboxController.cpp; sourceTree = "<group>"; };
+		CED5647B17C86139007C6F82 /* FrameworkWrapper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FrameworkWrapper.cpp; sourceTree = "<group>"; };
+		CED5647C17C86139007C6F82 /* LukeMonaghanFramework.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LukeMonaghanFramework.cpp; sourceTree = "<group>"; };
+		CED5647D17C86139007C6F82 /* LukeMonaghanFrameworkPython.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LukeMonaghanFrameworkPython.cpp; sourceTree = "<group>"; };
+		CED5647E17C86139007C6F82 /* MAIN.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MAIN.cpp; sourceTree = "<group>"; };
+		CED5648017C86139007C6F82 /* Maths.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Maths.cpp; sourceTree = "<group>"; };
+		CED5648117C86139007C6F82 /* Matrix3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Matrix3.cpp; sourceTree = "<group>"; };
+		CED5648217C86139007C6F82 /* Matrix4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Matrix4.cpp; sourceTree = "<group>"; };
+		CED5648317C86139007C6F82 /* Vector2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vector2.cpp; sourceTree = "<group>"; };
+		CED5648417C86139007C6F82 /* Vector3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vector3.cpp; sourceTree = "<group>"; };
+		CED5648517C86139007C6F82 /* Vector4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vector4.cpp; sourceTree = "<group>"; };
+		CED5648717C86139007C6F82 /* tinystr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinystr.cpp; sourceTree = "<group>"; };
+		CED5648817C86139007C6F82 /* tinyxml.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxml.cpp; sourceTree = "<group>"; };
+		CED5648917C86139007C6F82 /* tinyxmlerror.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxmlerror.cpp; sourceTree = "<group>"; };
+		CED5648A17C86139007C6F82 /* tinyxmlparser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxmlparser.cpp; sourceTree = "<group>"; };
+		CEEC537917C9D0D400C70049 /* libpython2.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpython2.7.dylib; path = /usr/lib/libpython2.7.dylib; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE87414617C7528800D9C191 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEEC537A17C9D0D400C70049 /* libpython2.7.dylib in Frameworks */,
+				CE87415617C7538500D9C191 /* libGLEW.1.10.0.dylib in Frameworks */,
+				CE87415A17C7538B00D9C191 /* OpenGL.framework in Frameworks */,
+				CE87415517C7538500D9C191 /* libfreeimage-3.15.4.dylib-x86_64 in Frameworks */,
+				CE87415717C7538500D9C191 /* libglfw.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE87414017C7528800D9C191 = {
+			isa = PBXGroup;
+			children = (
+				CEEC537C17C9D0E400C70049 /* Libs */,
+				CED5642A17C86139007C6F82 /* Include */,
+				CED5646717C86139007C6F82 /* Source */,
+				CE87414A17C7528800D9C191 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE87414A17C7528800D9C191 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE87414917C7528800D9C191 /* libLukeMonaghanFramework.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CED5642A17C86139007C6F82 /* Include */ = {
+			isa = PBXGroup;
+			children = (
+				CED5642B17C86139007C6F82 /* Common */,
+				CED5643E17C86139007C6F82 /* FI */,
+				CED5644017C86139007C6F82 /* FrameworkWrapper.h */,
+				CED5644117C86139007C6F82 /* GL */,
+				CED5644517C86139007C6F82 /* IK */,
+				CED5645B17C86139007C6F82 /* LukeMonaghanFramework.h */,
+				CED5645C17C86139007C6F82 /* LukeMonaghanFrameworkPython.h */,
+				CED5645D17C86139007C6F82 /* MATH */,
+				CED5646417C86139007C6F82 /* TXML */,
+			);
+			name = Include;
+			path = LukeMonaghanFramework/Include;
+			sourceTree = "<group>";
+		};
+		CED5642B17C86139007C6F82 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CED5642C17C86139007C6F82 /* Drawables */,
+				CED5643217C86139007C6F82 /* Emitter.h */,
+				CED5643317C86139007C6F82 /* Framework.h */,
+				CED5643417C86139007C6F82 /* Managers */,
+				CED5643B17C86139007C6F82 /* Shader.h */,
+				CED5643C17C86139007C6F82 /* Utilities.h */,
+				CED5643D17C86139007C6F82 /* XboxController.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		CED5642C17C86139007C6F82 /* Drawables */ = {
+			isa = PBXGroup;
+			children = (
+				CED5642D17C86139007C6F82 /* Font.h */,
+				CED5642E17C86139007C6F82 /* Model.h */,
+				CED5642F17C86139007C6F82 /* object.h */,
+				CED5643017C86139007C6F82 /* renderable.h */,
+				CED5643117C86139007C6F82 /* square.h */,
+			);
+			path = Drawables;
+			sourceTree = "<group>";
+		};
+		CED5643417C86139007C6F82 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				CED5643517C86139007C6F82 /* FontManager.h */,
+				CED5643617C86139007C6F82 /* ModelManager.h */,
+				CED5643717C86139007C6F82 /* ParticleManager.h */,
+				CED5643817C86139007C6F82 /* ShaderManager.h */,
+				CED5643917C86139007C6F82 /* SoundManager.h */,
+				CED5643A17C86139007C6F82 /* SquareManager.h */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		CED5643E17C86139007C6F82 /* FI */ = {
+			isa = PBXGroup;
+			children = (
+				CED5643F17C86139007C6F82 /* FreeImage.h */,
+			);
+			path = FI;
+			sourceTree = "<group>";
+		};
+		CED5644117C86139007C6F82 /* GL */ = {
+			isa = PBXGroup;
+			children = (
+				CED5644217C86139007C6F82 /* glew.h */,
+				CED5644317C86139007C6F82 /* glfw.h */,
+				CED5644417C86139007C6F82 /* wglew.h */,
+			);
+			path = GL;
+			sourceTree = "<group>";
+		};
+		CED5644517C86139007C6F82 /* IK */ = {
+			isa = PBXGroup;
+			children = (
+				CED5644617C86139007C6F82 /* ik_ESoundEngineOptions.h */,
+				CED5644717C86139007C6F82 /* ik_ESoundOutputDrivers.h */,
+				CED5644817C86139007C6F82 /* ik_EStreamModes.h */,
+				CED5644917C86139007C6F82 /* ik_IAudioRecorder.h */,
+				CED5644A17C86139007C6F82 /* ik_IAudioStream.h */,
+				CED5644B17C86139007C6F82 /* ik_IAudioStreamLoader.h */,
+				CED5644C17C86139007C6F82 /* ik_IFileFactory.h */,
+				CED5644D17C86139007C6F82 /* ik_IFileReader.h */,
+				CED5644E17C86139007C6F82 /* ik_IRefCounted.h */,
+				CED5644F17C86139007C6F82 /* ik_irrKlangTypes.h */,
+				CED5645017C86139007C6F82 /* ik_ISound.h */,
+				CED5645117C86139007C6F82 /* ik_ISoundDeviceList.h */,
+				CED5645217C86139007C6F82 /* ik_ISoundEffectControl.h */,
+				CED5645317C86139007C6F82 /* ik_ISoundEngine.h */,
+				CED5645417C86139007C6F82 /* ik_ISoundMixedOutputReceiver.h */,
+				CED5645517C86139007C6F82 /* ik_ISoundSource.h */,
+				CED5645617C86139007C6F82 /* ik_ISoundStopEventReceiver.h */,
+				CED5645717C86139007C6F82 /* ik_IVirtualRefCounted.h */,
+				CED5645817C86139007C6F82 /* ik_SAudioStreamFormat.h */,
+				CED5645917C86139007C6F82 /* ik_vec3d.h */,
+				CED5645A17C86139007C6F82 /* irrKlang.h */,
+			);
+			path = IK;
+			sourceTree = "<group>";
+		};
+		CED5645D17C86139007C6F82 /* MATH */ = {
+			isa = PBXGroup;
+			children = (
+				CED5645E17C86139007C6F82 /* Maths.h */,
+				CED5645F17C86139007C6F82 /* Matrix3.h */,
+				CED5646017C86139007C6F82 /* Matrix4.h */,
+				CED5646117C86139007C6F82 /* Vector2.h */,
+				CED5646217C86139007C6F82 /* Vector3.h */,
+				CED5646317C86139007C6F82 /* Vector4.h */,
+			);
+			path = MATH;
+			sourceTree = "<group>";
+		};
+		CED5646417C86139007C6F82 /* TXML */ = {
+			isa = PBXGroup;
+			children = (
+				CED5646517C86139007C6F82 /* tinystr.h */,
+				CED5646617C86139007C6F82 /* tinyxml.h */,
+			);
+			path = TXML;
+			sourceTree = "<group>";
+		};
+		CED5646717C86139007C6F82 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				CED5646817C86139007C6F82 /* Common */,
+				CED5647B17C86139007C6F82 /* FrameworkWrapper.cpp */,
+				CED5647C17C86139007C6F82 /* LukeMonaghanFramework.cpp */,
+				CED5647D17C86139007C6F82 /* LukeMonaghanFrameworkPython.cpp */,
+				CED5647E17C86139007C6F82 /* MAIN.cpp */,
+				CED5647F17C86139007C6F82 /* MATH */,
+				CED5648617C86139007C6F82 /* TXML */,
+			);
+			name = Source;
+			path = LukeMonaghanFramework/Source;
+			sourceTree = "<group>";
+		};
+		CED5646817C86139007C6F82 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CED5646917C86139007C6F82 /* Drawables */,
+				CED5646F17C86139007C6F82 /* Emitter.cpp */,
+				CED5647017C86139007C6F82 /* Framework.cpp */,
+				CED5647117C86139007C6F82 /* Managers */,
+				CED5647817C86139007C6F82 /* Shader.cpp */,
+				CED5647917C86139007C6F82 /* Utilities.cpp */,
+				CED5647A17C86139007C6F82 /* XboxController.cpp */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		CED5646917C86139007C6F82 /* Drawables */ = {
+			isa = PBXGroup;
+			children = (
+				CED5646A17C86139007C6F82 /* Font.cpp */,
+				CED5646B17C86139007C6F82 /* Model.cpp */,
+				CED5646C17C86139007C6F82 /* object.cpp */,
+				CED5646D17C86139007C6F82 /* renderable.cpp */,
+				CED5646E17C86139007C6F82 /* square.cpp */,
+			);
+			path = Drawables;
+			sourceTree = "<group>";
+		};
+		CED5647117C86139007C6F82 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				CED5647217C86139007C6F82 /* FontManager.cpp */,
+				CED5647317C86139007C6F82 /* ModelManager.cpp */,
+				CED5647417C86139007C6F82 /* ParticleManager.cpp */,
+				CED5647517C86139007C6F82 /* ShaderManager.cpp */,
+				CED5647617C86139007C6F82 /* SoundManager.cpp */,
+				CED5647717C86139007C6F82 /* SquareManager.cpp */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		CED5647F17C86139007C6F82 /* MATH */ = {
+			isa = PBXGroup;
+			children = (
+				CED5648017C86139007C6F82 /* Maths.cpp */,
+				CED5648117C86139007C6F82 /* Matrix3.cpp */,
+				CED5648217C86139007C6F82 /* Matrix4.cpp */,
+				CED5648317C86139007C6F82 /* Vector2.cpp */,
+				CED5648417C86139007C6F82 /* Vector3.cpp */,
+				CED5648517C86139007C6F82 /* Vector4.cpp */,
+			);
+			path = MATH;
+			sourceTree = "<group>";
+		};
+		CED5648617C86139007C6F82 /* TXML */ = {
+			isa = PBXGroup;
+			children = (
+				CED5648717C86139007C6F82 /* tinystr.cpp */,
+				CED5648817C86139007C6F82 /* tinyxml.cpp */,
+				CED5648917C86139007C6F82 /* tinyxmlerror.cpp */,
+				CED5648A17C86139007C6F82 /* tinyxmlparser.cpp */,
+			);
+			path = TXML;
+			sourceTree = "<group>";
+		};
+		CEEC537C17C9D0E400C70049 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				CE87415B17C7539000D9C191 /* Python.framework */,
+				CE87415917C7538B00D9C191 /* OpenGL.framework */,
+				CE87415117C7538500D9C191 /* libfreeimage-3.15.4.dylib-x86_64 */,
+				CE87415217C7538500D9C191 /* libGLEW.1.10.0.dylib */,
+				CE87415317C7538500D9C191 /* libglfw.dylib */,
+				CEEC537917C9D0D400C70049 /* libpython2.7.dylib */,
+			);
+			name = Libs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CE87414717C7528800D9C191 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED564B517C86139007C6F82 /* LukeMonaghanFramework.h in Headers */,
+				CED564B617C86139007C6F82 /* LukeMonaghanFrameworkPython.h in Headers */,
+				CED5648B17C86139007C6F82 /* Font.h in Headers */,
+				CED5648C17C86139007C6F82 /* Model.h in Headers */,
+				CED5648D17C86139007C6F82 /* object.h in Headers */,
+				CED5648E17C86139007C6F82 /* renderable.h in Headers */,
+				CED5648F17C86139007C6F82 /* square.h in Headers */,
+				CED5649017C86139007C6F82 /* Emitter.h in Headers */,
+				CED5649117C86139007C6F82 /* Framework.h in Headers */,
+				CED5649217C86139007C6F82 /* FontManager.h in Headers */,
+				CED5649317C86139007C6F82 /* ModelManager.h in Headers */,
+				CED5649417C86139007C6F82 /* ParticleManager.h in Headers */,
+				CED5649517C86139007C6F82 /* ShaderManager.h in Headers */,
+				CED5649617C86139007C6F82 /* SoundManager.h in Headers */,
+				CED5649717C86139007C6F82 /* SquareManager.h in Headers */,
+				CED5649817C86139007C6F82 /* Shader.h in Headers */,
+				CED5649917C86139007C6F82 /* Utilities.h in Headers */,
+				CED5649A17C86139007C6F82 /* XboxController.h in Headers */,
+				CED5649B17C86139007C6F82 /* FreeImage.h in Headers */,
+				CED5649C17C86139007C6F82 /* FrameworkWrapper.h in Headers */,
+				CED5649D17C86139007C6F82 /* glew.h in Headers */,
+				CED5649E17C86139007C6F82 /* glfw.h in Headers */,
+				CED5649F17C86139007C6F82 /* wglew.h in Headers */,
+				CED564A017C86139007C6F82 /* ik_ESoundEngineOptions.h in Headers */,
+				CED564A117C86139007C6F82 /* ik_ESoundOutputDrivers.h in Headers */,
+				CED564A217C86139007C6F82 /* ik_EStreamModes.h in Headers */,
+				CED564A317C86139007C6F82 /* ik_IAudioRecorder.h in Headers */,
+				CED564A417C86139007C6F82 /* ik_IAudioStream.h in Headers */,
+				CED564A517C86139007C6F82 /* ik_IAudioStreamLoader.h in Headers */,
+				CED564A617C86139007C6F82 /* ik_IFileFactory.h in Headers */,
+				CED564A717C86139007C6F82 /* ik_IFileReader.h in Headers */,
+				CED564A817C86139007C6F82 /* ik_IRefCounted.h in Headers */,
+				CED564A917C86139007C6F82 /* ik_irrKlangTypes.h in Headers */,
+				CED564AA17C86139007C6F82 /* ik_ISound.h in Headers */,
+				CED564AB17C86139007C6F82 /* ik_ISoundDeviceList.h in Headers */,
+				CED564AC17C86139007C6F82 /* ik_ISoundEffectControl.h in Headers */,
+				CED564AD17C86139007C6F82 /* ik_ISoundEngine.h in Headers */,
+				CED564AE17C86139007C6F82 /* ik_ISoundMixedOutputReceiver.h in Headers */,
+				CED564AF17C86139007C6F82 /* ik_ISoundSource.h in Headers */,
+				CED564B017C86139007C6F82 /* ik_ISoundStopEventReceiver.h in Headers */,
+				CED564B117C86139007C6F82 /* ik_IVirtualRefCounted.h in Headers */,
+				CED564B217C86139007C6F82 /* ik_SAudioStreamFormat.h in Headers */,
+				CED564B317C86139007C6F82 /* ik_vec3d.h in Headers */,
+				CED564B417C86139007C6F82 /* irrKlang.h in Headers */,
+				CED564B717C86139007C6F82 /* Maths.h in Headers */,
+				CED564B817C86139007C6F82 /* Matrix3.h in Headers */,
+				CED564B917C86139007C6F82 /* Matrix4.h in Headers */,
+				CED564BA17C86139007C6F82 /* Vector2.h in Headers */,
+				CED564BB17C86139007C6F82 /* Vector3.h in Headers */,
+				CED564BC17C86139007C6F82 /* Vector4.h in Headers */,
+				CED564BD17C86139007C6F82 /* tinystr.h in Headers */,
+				CED564BE17C86139007C6F82 /* tinyxml.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CE87414817C7528800D9C191 /* LukeMonaghanFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE87414D17C7528800D9C191 /* Build configuration list for PBXNativeTarget "LukeMonaghanFramework" */;
+			buildPhases = (
+				CE87414517C7528800D9C191 /* Sources */,
+				CE87414617C7528800D9C191 /* Frameworks */,
+				CE87414717C7528800D9C191 /* Headers */,
+				CE87415D17C7539B00D9C191 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LukeMonaghanFramework;
+			productName = LukeMonaghanFramework;
+			productReference = CE87414917C7528800D9C191 /* libLukeMonaghanFramework.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE87414117C7528800D9C191 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = LukeMonaghanFramework;
+			};
+			buildConfigurationList = CE87414417C7528800D9C191 /* Build configuration list for PBXProject "LukeMonaghanFramework" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CE87414017C7528800D9C191;
+			productRefGroup = CE87414A17C7528800D9C191 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE87414817C7528800D9C191 /* LukeMonaghanFramework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE87414517C7528800D9C191 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED564BF17C86139007C6F82 /* Font.cpp in Sources */,
+				CED564C017C86139007C6F82 /* Model.cpp in Sources */,
+				CED564C117C86139007C6F82 /* object.cpp in Sources */,
+				CED564C217C86139007C6F82 /* renderable.cpp in Sources */,
+				CED564C317C86139007C6F82 /* square.cpp in Sources */,
+				CED564C417C86139007C6F82 /* Emitter.cpp in Sources */,
+				CED564C517C86139007C6F82 /* Framework.cpp in Sources */,
+				CED564C617C86139007C6F82 /* FontManager.cpp in Sources */,
+				CED564C717C86139007C6F82 /* ModelManager.cpp in Sources */,
+				CED564C817C86139007C6F82 /* ParticleManager.cpp in Sources */,
+				CED564C917C86139007C6F82 /* ShaderManager.cpp in Sources */,
+				CED564CA17C86139007C6F82 /* SoundManager.cpp in Sources */,
+				CED564CB17C86139007C6F82 /* SquareManager.cpp in Sources */,
+				CED564CC17C86139007C6F82 /* Shader.cpp in Sources */,
+				CED564CD17C86139007C6F82 /* Utilities.cpp in Sources */,
+				CED564CE17C86139007C6F82 /* XboxController.cpp in Sources */,
+				CED564CF17C86139007C6F82 /* FrameworkWrapper.cpp in Sources */,
+				CED564D017C86139007C6F82 /* LukeMonaghanFramework.cpp in Sources */,
+				CED564D117C86139007C6F82 /* LukeMonaghanFrameworkPython.cpp in Sources */,
+				CED564D217C86139007C6F82 /* MAIN.cpp in Sources */,
+				CED564D317C86139007C6F82 /* Maths.cpp in Sources */,
+				CED564D417C86139007C6F82 /* Matrix3.cpp in Sources */,
+				CED564D517C86139007C6F82 /* Matrix4.cpp in Sources */,
+				CED564D617C86139007C6F82 /* Vector2.cpp in Sources */,
+				CED564D717C86139007C6F82 /* Vector3.cpp in Sources */,
+				CED564D817C86139007C6F82 /* Vector4.cpp in Sources */,
+				CED564D917C86139007C6F82 /* tinystr.cpp in Sources */,
+				CED564DA17C86139007C6F82 /* tinyxml.cpp in Sources */,
+				CED564DB17C86139007C6F82 /* tinyxmlerror.cpp in Sources */,
+				CED564DC17C86139007C6F82 /* tinyxmlparser.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CE87414B17C7528800D9C191 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/LukeMonaghanFramework/Libs\"";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/LukeMonaghanFramework/Include\"",
+					"\"/System/Library/Frameworks/Python.framework/Versions/2.7/include/Python2.7\"",
+				);
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/LukeMonaghanFramework/Libs\"";
+				MACH_O_TYPE = mh_dylib;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				REZ_SEARCH_PATHS = "\"$(SRCROOT)/LukeMonaghanFramework/Libs\"";
+				SDKROOT = "";
+			};
+			name = Debug;
+		};
+		CE87414C17C7528800D9C191 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/LukeMonaghanFramework/Libs\"";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/LukeMonaghanFramework/Include\"",
+					"\"/System/Library/Frameworks/Python.framework/Versions/2.7/include/Python2.7\"",
+				);
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/LukeMonaghanFramework/Libs\"";
+				MACH_O_TYPE = mh_dylib;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = NO;
+				REZ_SEARCH_PATHS = "\"$(SRCROOT)/LukeMonaghanFramework/Libs\"";
+				SDKROOT = "";
+			};
+			name = Release;
+		};
+		CE87414E17C7528800D9C191 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/LukeMonaghanFramework/Libs\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CE87414F17C7528800D9C191 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/LukeMonaghanFramework/Libs\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE87414417C7528800D9C191 /* Build configuration list for PBXProject "LukeMonaghanFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE87414B17C7528800D9C191 /* Debug */,
+				CE87414C17C7528800D9C191 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE87414D17C7528800D9C191 /* Build configuration list for PBXNativeTarget "LukeMonaghanFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE87414E17C7528800D9C191 /* Debug */,
+				CE87414F17C7528800D9C191 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE87414117C7528800D9C191 /* Project object */;
+}

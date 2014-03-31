@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A0B4895C-C5B9-4B5A-B603-8572863E90A5}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>LukeMonaghanFramework</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)Debug\</OutDir>
+    <IncludePath>$(PYTHONPATH);$(ProjectDir)Include;$(IncludePath)</IncludePath>
+    <ReferencePath>$(VCInstallDir)atlmfc\lib;$(VCInstallDir)lib</ReferencePath>
+    <SourcePath>$(ProjectDir)Source;$(SourcePath)</SourcePath>
+    <LibraryPath>$(PYTHONLIBS);$(ProjectDir)Libs;$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName)_d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)Release\</OutDir>
+    <IncludePath>$(PYTHONPATH);$(ProjectDir)Include;$(IncludePath)</IncludePath>
+    <ReferencePath>$(VCInstallDir)atlmfc\lib;$(VCInstallDir)lib</ReferencePath>
+    <SourcePath>$(ProjectDir)Source;$(SourcePath)</SourcePath>
+    <LibraryPath>$(PYTHONLIBS);$(ProjectDir)Libs;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;LUKEMONAGHANFW_EXPORTS;GLEW_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>glew32sd.lib;GLFW.lib;FreeImage.lib;Opengl32.lib;irrKlang.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+      <AdditionalOptions>/NODEFAULTLIB:msvcrt.lib %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(ProjectDir)Include\LukeMonaghanFramework.h" "$(SolutionDir)Debug\"
+copy "$(ProjectDir)Include\LukeMonaghanFrameworkPython.h" "$(SolutionDir)Debug\"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;LUKEMONAGHANFW_EXPORTS;GLEW_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>glew32sd.lib;GLFW.lib;FreeImage.lib;Opengl32.lib;irrKlang.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/NODEFAULTLIB:msvcrt.lib %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(ProjectDir)Include\LukeMonaghanFramework.h" "$(SolutionDir)Release\"
+copy "$(ProjectDir)Include\LukeMonaghanFrameworkPython.h" "$(SolutionDir)Release\"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Common\Drawables\Model.cpp" />
+    <ClCompile Include="Source\Common\Drawables\object.cpp" />
+    <ClCompile Include="Source\Common\Drawables\renderable.cpp" />
+    <ClCompile Include="Source\Common\Drawables\square.cpp" />
+    <ClCompile Include="Source\Common\Drawables\Font.cpp" />
+    <ClCompile Include="Source\Common\Emitter.cpp" />
+    <ClCompile Include="Source\Common\Framework.cpp" />
+    <ClCompile Include="Source\Common\Managers\FontManager.cpp" />
+    <ClCompile Include="Source\Common\Managers\ModelManager.cpp" />
+    <ClCompile Include="Source\Common\Managers\ParticleManager.cpp" />
+    <ClCompile Include="Source\Common\Managers\ShaderManager.cpp" />
+    <ClCompile Include="Source\Common\Managers\SoundManager.cpp" />
+    <ClCompile Include="Source\Common\Managers\SquareManager.cpp" />
+    <ClCompile Include="Source\Common\Shader.cpp" />
+    <ClCompile Include="Source\Common\Utilities.cpp" />
+    <ClCompile Include="Source\Common\XboxController.cpp" />
+    <ClCompile Include="Source\FrameworkWrapper.cpp" />
+    <ClCompile Include="Source\LukeMonaghanFramework.cpp" />
+    <ClCompile Include="Source\LukeMonaghanFrameworkPython.cpp" />
+    <ClCompile Include="Source\MATH\Maths.cpp" />
+    <ClCompile Include="Source\MATH\Matrix3.cpp" />
+    <ClCompile Include="Source\MATH\Matrix4.cpp" />
+    <ClCompile Include="Source\MATH\Vector2.cpp" />
+    <ClCompile Include="Source\MATH\Vector3.cpp" />
+    <ClCompile Include="Source\MATH\Vector4.cpp" />
+    <ClCompile Include="Source\TXML\tinystr.cpp" />
+    <ClCompile Include="Source\TXML\tinyxml.cpp" />
+    <ClCompile Include="Source\TXML\tinyxmlerror.cpp" />
+    <ClCompile Include="Source\TXML\tinyxmlparser.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\common\drawables\model.h" />
+    <ClInclude Include="Include\Common\Drawables\object.h" />
+    <ClInclude Include="Include\Common\Drawables\renderable.h" />
+    <ClInclude Include="Include\Common\Drawables\square.h" />
+    <ClInclude Include="Include\Common\Drawables\Font.h" />
+    <ClInclude Include="Include\Common\Emitter.h" />
+    <ClInclude Include="Include\Common\Framework.h" />
+    <ClInclude Include="Include\Common\Managers\FontManager.h" />
+    <ClInclude Include="Include\Common\Managers\ModelManager.h" />
+    <ClInclude Include="Include\Common\Managers\ParticleManager.h" />
+    <ClInclude Include="Include\Common\Managers\ShaderManager.h" />
+    <ClInclude Include="Include\Common\Managers\SoundManager.h" />
+    <ClInclude Include="Include\Common\Managers\SquareManager.h" />
+    <ClInclude Include="Include\Common\Shader.h" />
+    <ClInclude Include="Include\Common\Utilities.h" />
+    <ClInclude Include="Include\Common\XboxController.h" />
+    <ClInclude Include="Include\FI\FreeImage.h" />
+    <ClInclude Include="Include\FrameworkWrapper.h" />
+    <ClInclude Include="Include\GL\glew.h" />
+    <ClInclude Include="Include\GL\glfw.h" />
+    <ClInclude Include="Include\GL\wglew.h" />
+    <ClInclude Include="Include\IK\ik_ESoundEngineOptions.h" />
+    <ClInclude Include="Include\IK\ik_ESoundOutputDrivers.h" />
+    <ClInclude Include="Include\IK\ik_EStreamModes.h" />
+    <ClInclude Include="Include\IK\ik_IAudioRecorder.h" />
+    <ClInclude Include="Include\IK\ik_IAudioStream.h" />
+    <ClInclude Include="Include\IK\ik_IAudioStreamLoader.h" />
+    <ClInclude Include="Include\IK\ik_IFileFactory.h" />
+    <ClInclude Include="Include\IK\ik_IFileReader.h" />
+    <ClInclude Include="Include\IK\ik_IRefCounted.h" />
+    <ClInclude Include="Include\IK\ik_irrKlangTypes.h" />
+    <ClInclude Include="Include\IK\ik_ISound.h" />
+    <ClInclude Include="Include\IK\ik_ISoundDeviceList.h" />
+    <ClInclude Include="Include\IK\ik_ISoundEffectControl.h" />
+    <ClInclude Include="Include\IK\ik_ISoundEngine.h" />
+    <ClInclude Include="Include\IK\ik_ISoundMixedOutputReceiver.h" />
+    <ClInclude Include="Include\IK\ik_ISoundSource.h" />
+    <ClInclude Include="Include\IK\ik_ISoundStopEventReceiver.h" />
+    <ClInclude Include="Include\IK\ik_IVirtualRefCounted.h" />
+    <ClInclude Include="Include\IK\ik_SAudioStreamFormat.h" />
+    <ClInclude Include="Include\IK\ik_vec3d.h" />
+    <ClInclude Include="Include\IK\irrKlang.h" />
+    <ClInclude Include="Include\LukeMonaghanFramework.h" />
+    <ClInclude Include="Include\LukeMonaghanFrameworkPython.h" />
+    <ClInclude Include="include\math\maths.h" />
+    <ClInclude Include="include\math\matrix3.h" />
+    <ClInclude Include="include\math\matrix4.h" />
+    <ClInclude Include="include\math\vector2.h" />
+    <ClInclude Include="include\math\vector3.h" />
+    <ClInclude Include="include\math\vector4.h" />
+    <ClInclude Include="Include\TXML\tinystr.h" />
+    <ClInclude Include="Include\TXML\tinyxml.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
